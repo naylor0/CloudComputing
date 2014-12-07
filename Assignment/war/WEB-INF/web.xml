@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>LabServlet6_1</servlet-name>
+		<servlet-class>ie.dit.naylor.mark.LabServlet6_1Servlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>upload</servlet-name>
+		<servlet-class>ie.dit.naylor.mark.UploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>serve</servlet-name>
+		<servlet-class>ie.dit.naylor.mark.ServeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LabServlet6_1</servlet-name>
+		<url-pattern>/LabServlet6_1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>serve</servlet-name>
+		<url-pattern>/serve</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>upload</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

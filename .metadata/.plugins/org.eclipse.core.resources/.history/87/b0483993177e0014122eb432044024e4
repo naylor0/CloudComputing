@@ -1,0 +1,8 @@
+package ie.dit.naylor.mark;
+
+import javax.servlet.http.*;
+
+@SuppressWarnings("serial")
+public class DownloadServlet extends HttpServlet {
+	resp.getWriter().println("Hi!");
+}

@@ -1,0 +1,5 @@
+package ie.dit.naylor.mark;
+
+public class DownloadServlet {
+	resp.getWriter().println("Hi!");
+}
