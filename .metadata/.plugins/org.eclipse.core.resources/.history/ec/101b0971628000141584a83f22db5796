@@ -34,7 +34,7 @@ public class DownloadServlet extends HttpServlet
 		UserService userService = UserServiceFactory.getUserService();
 		userService.getCurrentUser();
 		String thisURL = req.getRequestURI();
-		String logoutURL = userService.createLogoutURL("/index.html");
+		String logoutURL = userService.createLogoutURL(thisURL);
 		Principal myPrincipal = req.getUserPrincipal();
 		String loginURL = userService.createLoginURL(thisURL);
 		if(myPrincipal == null) 
@@ -92,7 +92,7 @@ public class DownloadServlet extends HttpServlet
 				resp.getWriter().print("<p>View <a href=\"serve?blob-key=" + imagekey + "\">" + fname + "</a>.</p>");
 				resp.getWriter().println("<p>   Delete <a href=\"delete?blob-key=" + imagekey + "\">" + fname + "</a>.</p><br>");
 			}
-			resp.getWriter().println("<p>You can <a href=\"" + logoutURL +"\">sign out</a>.</p>");
+			resp.getWriter().println("<p>You can <a href=\""+ logoutURL + "\">logout here</a>.</p><br>");
 		}
 	}
 }

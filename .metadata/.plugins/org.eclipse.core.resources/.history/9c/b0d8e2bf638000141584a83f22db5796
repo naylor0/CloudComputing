@@ -34,7 +34,7 @@ public class DownloadServlet extends HttpServlet
 		UserService userService = UserServiceFactory.getUserService();
 		userService.getCurrentUser();
 		String thisURL = req.getRequestURI();
-		String logoutURL = userService.createLogoutURL("/index.html");
+		String logoutURL = userService.createLogoutURL("index.html");
 		Principal myPrincipal = req.getUserPrincipal();
 		String loginURL = userService.createLoginURL(thisURL);
 		if(myPrincipal == null) 

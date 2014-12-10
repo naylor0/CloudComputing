@@ -26,17 +26,18 @@ public class ViewServlet extends HttpServlet
 		// Use PreparedQuery interface to retrieve results
 		PreparedQuery pq = datastore.prepare(q);
 
-		if (pq.countEntities() == 0)
-		{
-			resp.getWriter().println("There are no public images!");
-		}
+
 		for (Entity result : pq.asIterable()) 
 		{
+			if(result.equals(null))
+			{
+				resp.getWriter().println("There are no public images!");
+			}
 			String fname = (String) result.getProperty("fname");
-			String imagekey = (String) result.getProperty("imagekey");
+			String imagekey = (String) result.getProperty("key");
 			String owner = (String) result.getProperty("owner");
 			String isPublic = (String) result.getProperty("public");
-			
+
 			resp.getWriter().println("<p>View <a href=\"serve?blob-key=" + imagekey + "\">" + fname + "</a>.</p>");
 		}
 	}

@@ -34,7 +34,7 @@ public class DownloadServlet extends HttpServlet
 		UserService userService = UserServiceFactory.getUserService();
 		userService.getCurrentUser();
 		String thisURL = req.getRequestURI();
-		String logoutURL = userService.createLogoutURL("/index.html");
+		String logoutURL = userService.createLogoutURL(thisURL);
 		Principal myPrincipal = req.getUserPrincipal();
 		String loginURL = userService.createLoginURL(thisURL);
 		if(myPrincipal == null) 
@@ -52,10 +52,7 @@ public class DownloadServlet extends HttpServlet
 			// Use PreparedQuery interface to retrieve results
 			PreparedQuery pq = datastore.prepare(q);
 
-			if(pq.countEntities() == 0)
-			{
-				resp.getWriter().println("There are no images on flop box");
-			}
+
 			for (Entity result : pq.asIterable()) 
 			{
 			  String fname = (String) result.getProperty("fname");
@@ -67,7 +64,7 @@ public class DownloadServlet extends HttpServlet
 			  resp.getWriter().print("<p>View <a href=\"serve?blob-key=" + imagekey + "\">" + fname + "</a>.</p>");
 			  resp.getWriter().println("<p>   Delete <a href=\"delete?blob-key=" + imagekey + "\">" + fname + "</a>.</p><br>");
 			}
-			resp.getWriter().println("<p>You can <a href=\"" + logoutURL +"\">sign out</a>.</p>");
+			resp.getWriter().println("<p>You can <a href=\""+ logoutURL + "\">logout here</a>.</p><br>");
 		}
 		else if (myPrincipal.getName() != null)
 		{
@@ -79,7 +76,7 @@ public class DownloadServlet extends HttpServlet
 
 			if(pq.countEntities() == 0)
 			{
-				resp.getWriter().println("You have no images");
+				resp.getWriter().println("There are no public or private images")
 			}
 			for (Entity result : pq.asIterable()) 
 			{
@@ -92,7 +89,7 @@ public class DownloadServlet extends HttpServlet
 				resp.getWriter().print("<p>View <a href=\"serve?blob-key=" + imagekey + "\">" + fname + "</a>.</p>");
 				resp.getWriter().println("<p>   Delete <a href=\"delete?blob-key=" + imagekey + "\">" + fname + "</a>.</p><br>");
 			}
-			resp.getWriter().println("<p>You can <a href=\"" + logoutURL +"\">sign out</a>.</p>");
+			resp.getWriter().println("<p>You can <a href=\""+ logoutURL + "\">logout here</a>.</p><br>");
 		}
 	}
 }

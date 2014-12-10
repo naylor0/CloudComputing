@@ -33,10 +33,10 @@ public class ViewServlet extends HttpServlet
 		for (Entity result : pq.asIterable()) 
 		{
 			String fname = (String) result.getProperty("fname");
-			String imagekey = (String) result.getProperty("imagekey");
+			String imagekey = (String) result.getProperty("key");
 			String owner = (String) result.getProperty("owner");
 			String isPublic = (String) result.getProperty("public");
-			
+			resp.getWriter().println("<p>View <a href=\"serve?blob-key=" + imagekey + "\">" + fname + "</a>.</p>");
 			resp.getWriter().println("<p>View <a href=\"serve?blob-key=" + imagekey + "\">" + fname + "</a>.</p>");
 		}
 	}
