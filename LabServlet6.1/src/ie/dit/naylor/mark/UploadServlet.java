@@ -24,6 +24,6 @@ public class UploadServlet extends HttpServlet
 		{
 			System.out.println("Uploaded a file with blobKey:" + blobKey.getKeyString());
 			res.sendRedirect("/serve?blob-key=" + blobKey.getKeyString());
-		} 
+		}
 	}
 }

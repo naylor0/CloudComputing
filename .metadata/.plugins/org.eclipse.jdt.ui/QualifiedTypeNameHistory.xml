@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.datanucleus.store.types.sco.backed.Map"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.blobstore.BlobInfoFactory"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.blobstore.BlobInfo"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.blobstore.BlobKey"/>
+<fullyQualifiedTypeName name="com.google.api.server.spi.auth.common.User"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.Entity"/>
+<fullyQualifiedTypeName name="com.google.apphosting.api.DatastorePb.DatastoreService"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.DatastoreServiceFactory"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.PreparedQuery"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.Query"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.Query.FilterOperator"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.Query.FilterPredicate"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.KeyFactory"/>
+<fullyQualifiedTypeName name="com.google.appengine.repackaged.com.google.api.client.util.Key"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.Key"/>
+</qualifiedTypeNameHistroy>

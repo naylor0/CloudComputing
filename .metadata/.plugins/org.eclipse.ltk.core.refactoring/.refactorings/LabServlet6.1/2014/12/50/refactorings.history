@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;UploadServlet.java&apos; to &apos;FlopBox/src/ie.dit.naylor.mark&apos;&#x0A;- Original project: &apos;LabServlet6.1&apos;&#x0A;- Destination element: &apos;FlopBox/src/ie.dit.naylor.mark&apos;&#x0A;- Original element: &apos;ie.dit.naylor.mark.UploadServlet.java&apos;" description="Copy compilation unit" destination="=FlopBox/src&lt;ie.dit.naylor.mark" element1="/src&lt;ie.dit.naylor.mark{UploadServlet.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1418047869050" units="1" version="1.0"/>
+</session>
