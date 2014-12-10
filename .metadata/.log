@@ -2199,3 +2199,45 @@ GIF89a  �� ���   ,       D ;
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2014-12-10 11:48:50.443
 !MESSAGE Can't handle class org.eclipse.jdt.internal.compiler.ast.BinaryExpression as parent of completion location.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-12-10 12:09:59.518
+!MESSAGE Can't handle class org.eclipse.jdt.internal.compiler.ast.IfStatement as parent of completion location.
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2014-12-10 12:13:14.771
+!MESSAGE FlopBox successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-12-10 12:13:14.853
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=GAE 1.9.15, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.java.product, cd2=5111CE3BB7C42AA1C92BB985B4C9DCF1DE1B3547, ea=DEPLOY_GAE, cid=1413384407419, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1413384407419&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gaev=1.9.15&p=org.eclipse.epp.package.java.product&action=gae_backend_deploy&appIdHash=5111CE3BB7C42AA1C92BB985B4C9DCF1DE1B3547&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1413384407419, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-12-10 12:13:14.854
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=GAE%201.9.15&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.java.product&cd2=5111CE3BB7C42AA1C92BB985B4C9DCF1DE1B3547&ea=DEPLOY_GAE&cid=1413384407419&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1413384407419%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gaev%3D1.9.15%26p%3Dorg.eclipse.epp.package.java.product%26action%3Dgae_backend_deploy%26appIdHash%3D5111CE3BB7C42AA1C92BB985B4C9DCF1DE1B3547%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1413384407419&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-12-10 12:13:15.136
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2014-12-10 12:22:41.030
+!MESSAGE FlopBox successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-12-10 12:22:41.113
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=GAE 1.9.15, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.java.product, cd2=5111CE3BB7C42AA1C92BB985B4C9DCF1DE1B3547, ea=DEPLOY_GAE, cid=1413384407419, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1413384407419&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gaev=1.9.15&p=org.eclipse.epp.package.java.product&action=gae_backend_deploy&appIdHash=5111CE3BB7C42AA1C92BB985B4C9DCF1DE1B3547&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1413384407419, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-12-10 12:22:41.114
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=GAE%201.9.15&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.java.product&cd2=5111CE3BB7C42AA1C92BB985B4C9DCF1DE1B3547&ea=DEPLOY_GAE&cid=1413384407419&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1413384407419%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gaev%3D1.9.15%26p%3Dorg.eclipse.epp.package.java.product%26action%3Dgae_backend_deploy%26appIdHash%3D5111CE3BB7C42AA1C92BB985B4C9DCF1DE1B3547%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1413384407419&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-12-10 12:22:41.708
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;
+
+!ENTRY com.google.appengine.eclipse.core 1 0 2014-12-10 13:05:54.454
+!MESSAGE FlopBox successfully deployed to Google App Engine
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-12-10 13:05:54.538
+!MESSAGE Sending POST request to Analytics: {cd7=NOT_USED, cd5=true, cd6=GAE 1.9.15, cd3=3.9.1.v20140825-1431, cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44, cd1=org.eclipse.epp.package.java.product, cd2=5111CE3BB7C42AA1C92BB985B4C9DCF1DE1B3547, ea=DEPLOY_GAE, cid=1413384407419, cd9=false, ec=com.google.gdt.eclipse.core, v=1, t=event, el=id=1413384407419&ev=3.9.1.v20140825-1431&v=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&gaev=1.9.15&p=org.eclipse.epp.package.java.product&action=gae_backend_deploy&appIdHash=5111CE3BB7C42AA1C92BB985B4C9DCF1DE1B3547&isGoogleCloudSqlUsed=false&isSignedIn=true, cd10=1413384407419, an=Google Plugin for Eclipse, tid=UA-43239122-1}
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-12-10 13:05:54.538
+!MESSAGE Analytics ping request parameters: cd7=NOT_USED&cd5=true&cd6=GAE%201.9.15&cd3=3.9.1.v20140825-1431&cd4=com.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44&cd1=org.eclipse.epp.package.java.product&cd2=5111CE3BB7C42AA1C92BB985B4C9DCF1DE1B3547&ea=DEPLOY_GAE&cid=1413384407419&cd9=false&ec=com.google.gdt.eclipse.core&v=1&t=event&el=id%3D1413384407419%26ev%3D3.9.1.v20140825-1431%26v%3Dcom.google.gdt.eclipse.suite.e44.feature_3.8.0.v201410302155-rel-r44%26gaev%3D1.9.15%26p%3Dorg.eclipse.epp.package.java.product%26action%3Dgae_backend_deploy%26appIdHash%3D5111CE3BB7C42AA1C92BB985B4C9DCF1DE1B3547%26isGoogleCloudSqlUsed%3Dfalse%26isSignedIn%3Dtrue&cd10=1413384407419&an=Google%20Plugin%20for%20Eclipse&tid=UA-43239122-1
+
+!ENTRY com.google.gdt.eclipse.suite.ext 1 0 2014-12-10 13:05:54.702
+!MESSAGE Analytics ping response: 200: OK
+GIF89a  �� ���   ,       D ;

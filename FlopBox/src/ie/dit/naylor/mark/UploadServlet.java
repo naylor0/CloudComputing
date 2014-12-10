@@ -7,6 +7,7 @@ import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 
+import com.google.api.server.spi.auth.common.User;
 import com.google.appengine.api.blobstore.BlobInfo;
 import com.google.appengine.api.blobstore.BlobInfoFactory;
 import com.google.appengine.api.blobstore.BlobKey;
@@ -33,7 +34,6 @@ public class UploadServlet extends HttpServlet
 		// Set up userservice
 		UserService userService = UserServiceFactory.getUserService();
 		userService.getCurrentUser();
-		Principal myPrincipal = req.getUserPrincipal();
 		String isPublic = req.getParameter("isPublic");
 		@SuppressWarnings("deprecation")
 		Map<String, BlobKey> blobs = blobstoreService.getUploadedBlobs(req);
@@ -44,12 +44,12 @@ public class UploadServlet extends HttpServlet
 		} 
 		else 
 		{
-			System.out.println("Uploaded a file with blobKey:" + blobKey.getKeyString());
+			// System.out.println("Uploaded a file with blobKey:" + blobKey.getKeyString());
 			BlobInfo info = infoFactory.loadBlobInfo(blobKey);
 		    String fname = info.getFilename();
 		    Entity image = new Entity("Image");
 		    image.setProperty("fname", fname);
-		    image.setProperty("owner", myPrincipal.getName());
+		    image.setProperty("owner", DownloadServlet.user);
 		    image.setProperty("imagekey", blobKey.getKeyString());
 		    image.setProperty("public", isPublic);
 
