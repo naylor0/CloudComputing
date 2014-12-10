@@ -37,12 +37,6 @@ public class DeleteServlet extends HttpServlet {
 			Key toDel = result.getKey();
 			datastore.delete(toDel);
 		}
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		res.sendRedirect("/download");
 	}
 

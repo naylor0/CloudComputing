@@ -43,7 +43,8 @@ www-test/
 
 #old GWT (1.5) created this dir
 .gwt-tmp/
-
+*.DS_Store
+*.prefs
 
 ### AppEngine ###
 # Google App Engine - https://developers.google.com/appengine/
