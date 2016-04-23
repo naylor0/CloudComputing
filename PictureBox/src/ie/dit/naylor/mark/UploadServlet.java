@@ -23,7 +23,6 @@ import com.google.appengine.api.images.Image;
 
 public class UploadServlet extends HttpServlet 
 {
-	public KeyFactory createkey;
 	private static final long serialVersionUID = 1L;
 	private com.google.appengine.api.blobstore.BlobstoreService blobstoreService = BlobstoreServiceFactory.getBlobstoreService();
 	private BlobInfoFactory infoFactory = new BlobInfoFactory();
@@ -40,7 +39,7 @@ public class UploadServlet extends HttpServlet
 		BlobKey blobKey = blobs.get("myFile");
 		if (blobKey == null) 
 		{ 
-			res.sendRedirect("/");
+			res.sendRedirect("/download");
 		} 
 		else 
 		{

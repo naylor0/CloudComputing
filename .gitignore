@@ -1,3 +1,9 @@
+.metadata/
+.recommenders/
+META-INF/
+.project
+.properties
+*.ico
 # Locally stored "Eclipse launch configurations"
 *.launch
 

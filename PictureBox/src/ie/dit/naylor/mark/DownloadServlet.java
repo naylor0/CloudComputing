@@ -54,7 +54,7 @@ public class DownloadServlet extends HttpServlet
 		// from this page any image can be deleted regardless of owner
 		if (myPrincipal.getName().equals("marknaylor2006@gmail.com") || myPrincipal.getName().equals("mark.deegan@dit.ie"))
 		{
-			resp.getWriter().println("<p><font color=\"red\" size=\"6\">Flop Box</font></p>");
+			resp.getWriter().println("<p><font color=\"red\" size=\"6\">Picture Box</font></p>");
 			resp.getWriter().println("<p><font size=\"4\">You are logged in as: " + user + "</font></p><br>");
 			resp.getWriter().println("<p><font size=\"4\"><a href=\"" + logoutURL +"\">Sign Out</a></p></font>");
 			resp.getWriter().println("<p><font size=\"4\"><a href=\"upload.jsp\">Upload A File</a></font></p><br>");
@@ -67,7 +67,7 @@ public class DownloadServlet extends HttpServlet
 			// if theres no images let user know
 			if(pq.countEntities() == 0)
 			{
-				resp.getWriter().println("<font size=\"4\">There are no images on flop box</font><br>");
+				resp.getWriter().println("<font size=\"4\">There are no images on Picture Box</font><br>");
 			}
 			// otherwise print a table with the images and links to view or delete all of them
 			else
@@ -94,7 +94,7 @@ public class DownloadServlet extends HttpServlet
 		// for all other users show them all images but only let them delete their own images
 		else if (myPrincipal.getName() != null)
 		{
-			resp.getWriter().println("<p><font color=\"red\" size=\"6\">Flop Box</font></p>");
+			resp.getWriter().println("<p><font color=\"red\" size=\"6\">Picture Box</font></p>");
 			resp.getWriter().println("<p><font size=\"4\">You are logged in as: " + user + "</font></p><br>");
 			resp.getWriter().println("<p><font size=\"4\"><a href=\"" + logoutURL +"\">Sign out</a></font></p>");
 			resp.getWriter().println("<p><font size=\"4\"><a href=\"upload.jsp\">Upload A Image</a></font></p><br>");
@@ -107,7 +107,7 @@ public class DownloadServlet extends HttpServlet
 			// if no results then let user know
 			if(pq.countEntities() == 0)
 			{
-				resp.getWriter().println("<p><font size=\"4\">There are no images on flop box</font></p><br>");
+				resp.getWriter().println("<p><font size=\"4\">There are no images on Picture Box</font></p><br>");
 			}
 			else
 			{

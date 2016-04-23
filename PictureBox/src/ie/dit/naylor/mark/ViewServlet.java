@@ -31,7 +31,7 @@ public class ViewServlet extends HttpServlet
 		// If there are no results from the query
 		if(pq.countEntities() == 0)
 		{
-			resp.getWriter().println("<p><font size=\"4\">There are no public images on flop box</font></p>");
+			resp.getWriter().println("<p><font size=\"4\">There are no public images on Picture Box</font></p>");
 			resp.getWriter().println("<p><font size=\"4\"><a href=\"/login\">Sign in</a> to view private images</font></p>");
 		}
 		else
