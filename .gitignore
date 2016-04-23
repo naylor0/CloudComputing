@@ -1,8 +1,9 @@
+.settings/
 .metadata/
 .recommenders/
 META-INF/
 .project
-.properties
+*.properties
 *.ico
 # Locally stored "Eclipse launch configurations"
 *.launch
@@ -22,6 +23,7 @@ META-INF/
 
 ### GWT ###
 *.class
+*.classpath
 
 # Package Files #
 *.jar
